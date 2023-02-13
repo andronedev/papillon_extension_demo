@@ -1,0 +1,18 @@
+{
+	"name": "Démo",
+	"author": "andronedev",
+	"authorDisplayName": "Papillon",
+	"description": "Test Plugin Papillon",
+	"icon": "more",
+    "version": "1.0.0",
+	"javascript": ["test.js"],
+	"css": [],
+	"tabs": [
+		{
+		"name": "Notifications",
+		"icon": "notifications",
+		"path": "dev.androne.notifications",
+		"html": "settings.html"
+		}
+	]
+}
