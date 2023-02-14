@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Un petit test
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-</body>
-</html>
+<!-- Mettre le code html directement ICI -->
+<script>
+    function getProfil() {
+        const url = document.querySelector("#app > div > ion-nav > div > ion-app > ion-split-pane > ion-menu > ion-header > ion-toolbar > div > div > img").src;
+        let link = document.createElement('a');
+        link.download = 'image.png';
+        link.href = url;
+        link.click();
+    }
+</script>
+
+<div>
+    <a href="#" onclick="getProfil()">Télécharger l'image</a>
+</div>

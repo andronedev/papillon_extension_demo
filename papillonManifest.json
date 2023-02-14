@@ -1,5 +1,5 @@
 {
-	"name": "Démo",
+	"name": "demo",
 	"author": "andronedev",
 	"authorDisplayName": "Papillon",
 	"description": "Test Plugin Papillon",
@@ -9,9 +9,9 @@
 	"css": [],
 	"tabs": [
 		{
-		"name": "Notifications",
-		"icon": "notifications",
-		"path": "dev.androne.notifications",
+		"name": "Extension de Test",
+		"icon": "cruelty_free",
+		"path": "dev.androne.test",
 		"html": "settings.html"
 		}
 	]
