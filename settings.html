@@ -7,8 +7,11 @@
         link.href = url;
         link.click();
     }
+    document.querySelector("#download").addEventListener("click", getProfil);
 </script>
 
 <div>
-    <a href="#" onclick="getProfil()">Télécharger l'image</a>
+    <span id="download">
+        Télécharger l'image de profil
+    </span>
 </div>
