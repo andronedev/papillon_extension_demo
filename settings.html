@@ -14,7 +14,7 @@
                     download
                 </span>
                 <div class="cours_topData">
-                    <h3>TÃ©lÃ©charger votre photo de profil</h3>
+                    <h3>Télécharger votre photo de profil</h3>
                 </div>
             </div>
         </a>
@@ -52,7 +52,8 @@
 
 
     document.getElementById("img_pp").src = profilUrl;
-    document.getElementById("download_pp_btn").addEventListener("click", function () {
+    document.getElementById("download_pp_btn").addEventListener("click", function (e) {
+        e.preventDefault();
         // Download
         var link = document.createElement('a');
         link.download = 'profil.png';
