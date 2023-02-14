@@ -48,21 +48,18 @@
 <script>
 
 
-    function init() {
-        const profilUrl = document.querySelector("#app > div > ion-nav > div > ion-app > ion-split-pane > ion-menu > ion-header > ion-toolbar > div > div > img").src;
+    const profilUrl = document.querySelector("#app > div > ion-nav > div > ion-app > ion-split-pane > ion-menu > ion-header > ion-toolbar > div > div > img").src;
+    document.getElementById("img_pp").src = profilUrl;
+    document.getElementById("download_pp_btn").addEventListener("click", function (e) {
+        e.preventDefault();
+        // Download
+        var link = document.createElement('a');
+        link.download = 'profil.png';
+        link.src = profilUrl;
+        link.click();
+
+    });
 
 
-        document.getElementById("img_pp").src = profilUrl;
-        document.getElementById("download_pp_btn").addEventListener("click", function (e) {
-            e.preventDefault();
-            // Download
-            var link = document.createElement('a');
-            link.download = 'profil.png';
-            link.src = profilUrl;
-            link.click();
-
-        });
-    }
-    
 
 </script>
