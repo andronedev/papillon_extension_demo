@@ -1,17 +1,65 @@
 <!-- Mettre le code html directement ICI -->
-<script>
-    function getProfil() {
-        const url = document.querySelector("#app > div > ion-nav > div > ion-app > ion-split-pane > ion-menu > ion-header > ion-toolbar > div > div > img").src;
-        let link = document.createElement('a');
-        link.download = 'image.png';
-        link.href = url;
-        link.click();
-    }
-    document.querySelector("#download").addEventListener("click", getProfil);
-</script>
 
-<div>
-    <span id="download">
-        Télécharger l'image de profil
-    </span>
+
+
+<div id="dlprofil">
+    <div class="img_pp_box">
+        <img id="img_pp">
+    </div>
+
+    <div id="dlprofil_actions">
+        <a href="#" id="download_pp_btn">
+            <div class="cours file" style="--off: 10ms">
+                <span class="material-symbols-outlined">
+                    download
+                </span>
+                <div class="cours_topData">
+                    <h3>TÃ©lÃ©charger votre photo de profil</h3>
+                </div>
+            </div>
+        </a>
+    </div>
 </div>
+
+<style>
+    .img_pp_box {
+        margin-top: 10px;
+        width: auto;
+        height: 100%;
+        max-height: 300px;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .img_pp_box img {
+        border-radius: 10px;
+        overflow: hidden;
+
+    }
+
+    #dlprofil_actions {
+        padding: 10px;
+    }
+</style>
+
+
+<script>
+   
+
+    const profilUrl = document.querySelector("#app > div > ion-nav > div > ion-app > ion-split-pane > ion-menu > ion-header > ion-toolbar > div > div > img").src;
+
+
+    document.getElementById("img_pp").src = profilUrl;
+    document.getElementById("download_pp_btn").addEventListener("click", function () {
+        // Download
+        var link = document.createElement('a');
+        link.download = 'profil.png';
+        link.src = profilUrl;
+        link.click();
+        
+    });
+    
+
+</script>
