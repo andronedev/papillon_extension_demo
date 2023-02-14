@@ -12,7 +12,7 @@
 		"name": "Extension de Test",
 		"icon": "cruelty_free",
 		"path": "dev.androne.test",
-		"html": "settings.html"
+		"html": "test.html"
 		}
 	]
 }
