@@ -3,7 +3,7 @@
 	"author": "andronedev",
 	"authorDisplayName": "Papillon",
 	"description": "Test Plugin Papillon",
-	"icon": "more",
+	"icon": "cruelty_free",
     "version": "1.0.0",
 	"javascript": ["test.js"],
 	"css": [],
